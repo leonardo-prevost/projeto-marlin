@@ -1,0 +1,65 @@
+/*CSS DETAIL*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.top-bar-container img{
+    width: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+header {
+    background-color: black;
+    height: 12rem;
+}
+.logo-container img{
+    padding: 1rem;
+    width: 11.5rem;
+    margin: 1rem 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+fieldset legend {
+    font-size: 2rem;
+    font: bold;;
+}
+fieldset{
+    background-color: #fafafa;
+}
+.input-block label,
+.select-block select,
+.image-area-block label {
+    font: larger;
+    font-size: 1.2rem;
+}
+.input-block input {
+    width: 20rem;
+    height: 2rem;
+    margin-top: 0.4rem;
+    border-radius: 0.2rem;
+    border: 1px solid; 
+    outline: 0;
+    padding:0 1,6rem;
+    font: 5rem
+}
+
+.input-block:focus-within::after{
+    content:"";
+
+    width: calc(100% - 3.2rem);
+    height: 2px;
+
+    position: absolute;
+    left: 1.6rem;
+    bottom: 0;
+}
+@media(max-width: 400px ){
+    body {
+        width: 100%;
+    }
+    
+    .input-name{
+        width: 3rem;
+    }
+}

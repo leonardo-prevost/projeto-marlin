@@ -1,0 +1,160 @@
+/*Reset Global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 100% 1fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "conteudo menulateral";
+    margin-bottom: 5rem;
+}
+
+article {
+    grid-area: conteudo;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.menu-right {
+    grid-area: menulateral;
+    position: absolute;
+    right: 0;
+    width: 15rem;
+}
+
+.header {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.boxes {
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: rgba(53, 51, 51, 0.562);
+    margin-top: 0.4rem;
+    text-align: center;
+}
+
+figure img {
+    /* max-width:100%; */
+    width: 30.9rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+    /* display: block; */
+}
+
+figure {
+    border: 1px solid rgba(168, 162, 162, 0.562);
+    width: 31rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+figcaption {
+    padding: 1rem;
+}
+
+#btnLeiaMais {
+    font-size: 1rem;
+    color: #00BFFF;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.main-text {
+    color: rgba(53, 51, 51, 0.562);
+    display: block;
+    text-align: justify;
+    margin-top: 1.2rem;
+}
+
+.categoria li:first-child {
+    border: none;
+    font-weight: bold;
+}
+
+.categoria li {
+    list-style: none;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(168, 162, 162, 0.842);
+    padding-bottom: 1rem;
+    width: 13rem;
+}
+
+.categoria li a {
+    text-decoration: none;
+    color: rgba(168, 162, 162, 0.842);
+}
+
+.categoria li a:hover {
+    text-decoration: none;
+    color: rgba(83, 83, 83, 0.842);
+    font-weight: bold;
+}
+
+.search {
+    position: relative;
+}
+
+.search label {
+    font-weight: bold;
+}
+
+.search input {
+    height: 2rem;
+    width: 13rem;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    border: 1px solid rgba(168, 162, 162, 0.562);
+    margin-top: .6rem;
+   
+}
+
+#name::placeholder {
+    padding: 1rem;
+}
+
+.btn-search {
+    position: absolute;
+    right: 2rem;
+    bottom: 0.009rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+ 
+}
+
+.btn-search img {
+    width: 1.7rem;
+    cursor: pointer;
+    opacity: 50%;
+  
+   
+}
+.enterButton{
+padding: 1rem;
+margin-top: 1rem;
+width: 13rem;
+border-radius: 0.5rem;
+
+
+}
+
+.enterButton:hover{
+background-color: rgb(95, 95, 95);
+cursor: pointer;
+
+}

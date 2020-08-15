@@ -1,0 +1,58 @@
+
+<div id="page-landing">
+ 
+    <div class="boxes">
+        <h1 class="header">Exibindo resultados de busca por <span class="result">"Soluções digitais"</span></h1>
+        <h2><small>Encontramos um total de {{contador}} resultados para sua busca</small></h2>
+    </div>
+
+
+    <main>
+
+        <article>
+
+            <figure *ngFor="let legenda of legendas; index as i" class="main-boxes">
+                <img src={{noticias[i].url}} alt="retornos de busca">
+                <figcaption>
+                    <strong class="card-title">{{legenda.title}}</strong>
+                    <span class="main-text">{{legenda.body}}</span>
+                    <button id="btnLeiaMais" routerLink="/conteudo/detalhe" routerLinkActive="active">Leia Mais</button>
+                    
+                </figcaption>
+            </figure>
+
+        </article>
+
+
+        <div class="menu-right">
+            <div class="categoria">
+                <ul>
+                    <li>Categorias</li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                </ul>
+            </div><br>
+            <div class="search">
+                <form action="" id="news" method="GET">
+                    <label for="name">Procurando alguma notícia?</label>
+                    <input type="text" id="name" placeholder="Pesquisar por...">
+                    <button class="btn-search" type="submit">
+                        <img src="assets/search.png" alt="Lupa">
+                    </button>
+                </form>
+            </div>
+
+            <div class="search">
+              
+                    <button class="enterButton" routerLink="/conteudo/cadastrar" routerLinkActive="active">Cadastrar Notícias</button>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+</div>
